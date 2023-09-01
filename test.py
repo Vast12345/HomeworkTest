@@ -11,7 +11,11 @@ def Multiplication(a, b):
   return multiplying
 
 def Division(a, b):
-  dividing = a / b
+  try:
+    dividing = a / b
+  except ZeroDivisionError:
+    print("Error")
+    dividing = None
   return dividing 
 
 while True:
@@ -42,7 +46,10 @@ while True:
     divNumber2 = eval(input("Choose the second number you would like to divide "))
 
     divResult = Division(divNumber, divNumber2)
-    print(divResult)
+    if divResult is not None:
+      print(divResult)
+    else:
+      print("Division by 0 is not permitted")
   elif operation == '5':
     break
   else:
