@@ -20,26 +20,26 @@ while True:
   operation = input()
 
   if operation == '1':
-    addNumber = int(input("Choose which number you would like to add "))
-    addNumber2 = int(input("Choose the second number you would like to add "))
+    addNumber = eval(input("Choose which number you would like to add "))
+    addNumber2 = eval(input("Choose the second number you would like to add "))
 
     addResult = Addition(addNumber, addNumber2)
     print(addResult)
   elif operation == '2':
-    subNumber = int(input("Choose which number you would like to subtract "))
-    subNumber2 = int(input("Choose the second number you would like to subtract "))
+    subNumber = eval(input("Choose which number you would like to subtract "))
+    subNumber2 = eval(input("Choose the second number you would like to subtract "))
 
     subResult = Subtraction(subNumber, subNumber2)
     print(subResult)
   elif operation == '3':
-    multNumber = int(input("Choose which number you would like to multiply "))
-    multNumber2 = int(input("Choose the second number you would like to multiply "))
+    multNumber = eval(input("Choose which number you would like to multiply "))
+    multNumber2 = eval(input("Choose the second number you would like to multiply "))
 
     multResult = Multiplication(multNumber, multNumber2)
     print(multResult)
   elif operation == '4':
-    divNumber = int(input("Choose which number you would like to divide "))
-    divNumber2 = int(input("Choose the second number you would like to divide "))
+    divNumber = eval(input("Choose which number you would like to divide "))
+    divNumber2 = eval(input("Choose the second number you would like to divide "))
 
     divResult = Division(divNumber, divNumber2)
     print(divResult)
