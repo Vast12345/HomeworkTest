@@ -14,10 +14,10 @@ for word in lista:
 
 print("---------------------------------------------------------------------")
 
-lista_input = int(input())
+    
+new_append = input("What would you like to add to the list: ")
 
-lista.append(lista_input)
-
+add_new_append = lista.append(new_append)
 for word in lista:
     print(word)
 
